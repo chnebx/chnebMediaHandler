@@ -7,11 +7,13 @@ La première partie est faite, ensuite il ne reste plus qu'a créer des liens ht
 Exemple :
 
 pour les images:
+```html
 <a class="chneb-media-btn" href="images/img.jpg">Lien vers l'image</a>
-
+```
 pour les vidéos:
+```html
 <a class="chneb-media-btn" href="videos/hello.mp4">Lien vers la vidéo</a>
-
+```
 Le programme déterminera automatiquement le type de média selon l'extension ( mp4, jpg, etc... )
 
 pour changer le design de la vidéo et du fond noir transparent il faut éditer la classe ".chneb-overlay" dans chnebMediaHandler.css
