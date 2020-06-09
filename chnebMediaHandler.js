@@ -36,7 +36,7 @@ let chnebMediaHandler = (function () {
         }
     }
 
-    function videoPlayerInit() {
+    function mediaPlayerInit() {
         videosBtns = document.querySelectorAll(".chneb-media-btn");
         videosBtns.forEach(videoBtn => {
             for (let i = 0; i < videosBtns.length; i++) {
@@ -55,6 +55,7 @@ let chnebMediaHandler = (function () {
         let mediaTag;
         if (mediaType === "video") {
             mediaTag = document.createElement("video");
+            mediaTag.setAttribute("autoplay", "on");
             mediaTag.setAttribute("controls", "on");
         } else if (mediaType === "image") {
             mediaTag = document.createElement("img");
@@ -66,16 +67,10 @@ let chnebMediaHandler = (function () {
         currentMediaDisplayed.addEventListener("click", overlayClickEvent);
     }
 
-
-
-    function applyDefaultCarouselStyle() {
-
-    }
-
     return {
         carouselInit: carouselInit,
-        videoPlayerInit: videoPlayerInit
+        mediaPlayerInit: mediaPlayerInit
     };
 })();
 
-const videos = chnebMediaHandler.videoPlayerInit();
+const videos = chnebMediaHandler.mediaPlayerInit();
