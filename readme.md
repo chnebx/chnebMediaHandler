@@ -1,9 +1,16 @@
-Copier les fichiers chnebMediaHandler.css et chnebMediaHandler.js dans n'importe quel projet et les importer ensuite dans le fichier html
+## Copier les fichiers chnebMediaHandler.css et chnebMediaHandler.js dans n'importe quel projet et les importer ensuite dans le fichier html
 
-_ placer <link rel="stylesheet" href="(chemin pour chnebMediaHandler.css)"> dans la partie <head> de l'html ( en haut de la page )
-_ placer <script src="(chemin pour chnebMediaHandler.js)"></script> tout en bas dans la balise principale <body>
+_ placer dans la partie <head> de l'html ( en haut de la page )
+```html
+<link rel="stylesheet" href="(chemin pour chnebMediaHandler.css)"> 
+```
 
-La première partie est faite, ensuite il ne reste plus qu'a créer des liens html <a></a> et leur donner la classe : "chneb-media-btn".
+_ placer tout en bas dans la balise principale <body>
+```html
+<script src="(chemin pour chnebMediaHandler.js)"></script>
+```
+
+## La première partie est faite, ensuite il ne reste plus qu'a créer des liens html <a></a> et leur donner la classe : "chneb-media-btn".
 Exemple :
 
 pour les images:
